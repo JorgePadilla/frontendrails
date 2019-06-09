@@ -1,13 +1,13 @@
 * {box-sizing: border-box;}	
 
 		
-
+/*We will define the attributes of the wrapper here*/
 .wrapper {
     border: 2px solid #f76707;
     border-radius: 5px;
     background-color: #fff4e6;
 }
-
+/*We will define the attributes of the divs that are inside a wrapper*/
 .wrapper > div {
     border: 2px solid #ffa94d;
     border-radius: 5px;
@@ -15,6 +15,8 @@
     padding: 1em;
     color: #d9480f;
 }
+
+/*Every div will cover X amount of area according to the grid-colum-end and grid-row-end */
 .wrapper div:nth-child(1) {
   grid-column-end: span 2;
   grid-row-end: span 6;
@@ -67,7 +69,7 @@
   grid-gap: 10px;
   grid-auto-flow: dense;
 }
-
+/* This media query is use to create a breakpoint to define how the mobile view will look like*/  
 @media screen and (max-width: 600px) { 
   .wrapper {
     border: 2px solid #f76707;
